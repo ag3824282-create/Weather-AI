@@ -1,0 +1,43 @@
+{
+    "jaipur": {
+        "weather": {
+            "city": "Jaipur",
+            "temperature": 27.62,
+            "description": "moderate rain",
+            "humidity": 89,
+            "wind_speed": 1.03
+        },
+        "timestamp": 1786738820.2387335
+    },
+
+    "delhi": {
+        "weather": {
+            "city": "Delhi",
+            "temperature": 29.18,
+            "description": "moderate rain",
+            "humidity": 78,
+            "wind_speed": 3.13
+        },
+        "timestamp": 1786107020.6412988
+    },
+    "mumbai": {
+        "weather": {
+            "city": "Mumbai",
+            "temperature": 27.67,
+            "description": "overcast clouds",
+            "humidity": 79,
+            "wind_speed": 8.9
+        },
+        "timestamp": 1786434383.9977832
+    },
+    "bhilwara": {
+        "weather": {
+            "city": "Bhilwara",
+            "temperature": 34.09,
+            "description": "overcast clouds",
+            "humidity": 51,
+            "wind_speed": 3.89
+        },
+        "timestamp": 1786434213.7654636
+    }
+}

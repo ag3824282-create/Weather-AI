@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>🌦 Weather AI</h1>
+
+    <p>Welcome to Weather AI!</p>
+
+    <form action="/weather" method="POST">
+
+    <label for="city">City:</label>
+
+    <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Enter city">
+
+    <button type="submit">
+        Search
+    </button>
+</form>
+
+    <!-- Error -->
+    {% if error %}
+
+        <p>{{ error }}</p>
+
+    {% endif %}
+
+    <!-- Weather -->
+
+    {% if weather %}
+
+        <h2>{{ weather.city }}</h2>
+
+        <p>🌡 Temperature : {{ weather.temperature }}°C</p>
+
+        <p>☁ Description : {{ weather.description }}</p>
+
+        <p>💧 Humidity : {{ weather.humidity }}%</p>
+
+        <p>🌬 Wind Speed : {{ weather.wind_speed }} m/s</p>
+
+    {% endif %}
+
+</body>
+</html>
